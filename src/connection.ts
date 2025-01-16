@@ -1,4 +1,4 @@
-import mysql, { PoolConnection } from "mysql2/promise.js";
+import mysql from "mysql2/promise.js";
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -12,4 +12,4 @@ const init = {
 const { database, user, password, host } = init;
 const pool = mysql.createPool({ host, user, password, database });
 
-export { pool };
+export default pool;
