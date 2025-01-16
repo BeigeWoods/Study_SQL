@@ -248,7 +248,7 @@ describe("Controll concerrancy about good", () => {
       }
     }, 20000);
 
-    test("pick -> race", async () => {
+    test("pick -> vote", async () => {
       let connE: PoolConnection, connF: PoolConnection;
       try {
         connE = await pool.getConnection();
